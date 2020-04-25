@@ -1,0 +1,29 @@
+<!-- <section class="main">
+  <div class="template">
+    <h3>Chennai Super Kings</h3>
+    <h5>
+      www.chennaisuperkings.com
+    </h5>
+    <h5>Murali Vijay</h5>
+    <h5>Phone Number</h5>
+    <div class="img">
+      <img src="../../assets/csk.png" alt="">
+    </div>
+  </div>
+</section> -->
+
+<ul class="teams">
+  <li *ngFor="let team of team">
+    <div class="template">
+      <h3>{{team.name}}</h3>
+      <h5>
+        {{team.website}}
+      </h5>
+      <h5>{{team.bestplayer}}</h5>
+      <h5>{{team.number}}</h5>
+      <div class="img">
+        <img src="{{team.image}}" alt="">
+      </div>
+    </div>
+  </li>
+</ul>
